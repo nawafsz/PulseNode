@@ -15,7 +15,7 @@ function getInitialLocale(): Locale {
   const fromDom = document.documentElement.dataset.locale;
   if (fromDom) return normalizeLocale(fromDom);
   try {
-    return normalizeLocale(window.localStorage.getItem("mindly.locale"));
+    return normalizeLocale(window.localStorage.getItem("mindlink.locale"));
   } catch {
     return DEFAULT_LOCALE;
   }
@@ -32,7 +32,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
       document.documentElement.dataset.locale = next;
     }
     try {
-      window.localStorage.setItem("mindly.locale", next);
+      window.localStorage.setItem("mindlink.locale", next);
     } catch {}
   };
 

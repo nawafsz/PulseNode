@@ -34,7 +34,7 @@ export class AiService {
         {
           role: 'system',
           content:
-            'You are PulseNode AI. Summarize the given post as a TL;DR in 1-2 sentences. Keep it neutral and factual.',
+            'You are MindLink AI. Summarize the given post as a TL;DR in 1-2 sentences. Keep it neutral and factual.',
         },
         { role: 'user', content },
       ],

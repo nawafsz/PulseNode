@@ -30,7 +30,7 @@ export function Navbar() {
     const next = current === "dark" ? "light" : "dark";
     root.dataset.theme = next;
     try {
-      window.localStorage.setItem("pulsenode.theme", next);
+      window.localStorage.setItem("mindlink.theme", next);
     } catch {}
   };
 
@@ -55,10 +55,10 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none", flexShrink: 0 }}>
             <span style={{ position: "relative", width: "36px", height: "36px", display: "block", flexShrink: 0 }}>
-              <Image className="logo-dark" src="/mindly-mark-dark.svg" alt="Mindly" width={36} height={36} priority />
-              <Image className="logo-light" src="/mindly-mark-light.svg" alt="Mindly" width={36} height={36} priority />
+              <Image className="logo-dark" src="/mindly-mark-dark.svg" alt="MindLink" width={36} height={36} priority />
+              <Image className="logo-light" src="/mindly-mark-light.svg" alt="MindLink" width={36} height={36} priority />
             </span>
-            <span className="gradient-text" style={{ fontSize: "1.2rem", fontWeight: 800 }}>Mindly</span>
+            <span className="gradient-text" style={{ fontSize: "1.2rem", fontWeight: 800 }}>MindLink</span>
           </Link>
 
           {/* Search */}

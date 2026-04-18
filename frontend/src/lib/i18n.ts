@@ -21,7 +21,7 @@ type Translations = Record<Locale, Dictionary>;
 
 export const translations: Translations = {
   en: {
-    "app.name": "Mindly",
+    "app.name": "MindLink",
     "common.new": "New",
 
     "nav.search": "Search knowledge paths…",
@@ -93,7 +93,7 @@ export const translations: Translations = {
     "home.h1b": "Scrolling.",
     "home.h1c": "Start",
     "home.h1d": "Knowing.",
-    "home.desc": "Mindly replaces mindless scrolling with AI-curated knowledge paths. Every post is verified, summarized, and semantically matched to your professional growth.",
+    "home.desc": "MindLink replaces mindless scrolling with AI-curated knowledge paths. Every post is verified, summarized, and semantically matched to your professional growth.",
     "home.cta.feed": "Enter the Feed",
     "home.cta.explore": "Explore Knowledge Paths",
     "home.stat.posts": "Posts Verified",
@@ -104,7 +104,7 @@ export const translations: Translations = {
     "home.pill.semantic": "Semantic Feed Engine",
 
     "settings.title": "Settings",
-    "settings.desc": "Customize Mindly to match your preferences.",
+    "settings.desc": "Customize MindLink to match your preferences.",
     "settings.save": "Save",
     "settings.saved": "Saved",
     "settings.appearance": "Appearance",
@@ -217,7 +217,7 @@ export const translations: Translations = {
     "network.message": "Message",
     "network.email": "Email",
     "network.messageLocked": "Follow the user to message them.",
-    "network.mailSubject": "Mindly message",
+    "network.mailSubject": "MindLink message",
 
     "saved.eyebrow": "Saved",
     "saved.title": "Your Reading List",
@@ -311,7 +311,7 @@ export const translations: Translations = {
     "team.role.moderator": "Moderator",
   },
   ar: {
-    "app.name": "مايندلي",
+    "app.name": "MindLink",
     "common.new": "جديد",
 
     "nav.search": "ابحث في مسارات المعرفة…",
@@ -383,7 +383,7 @@ export const translations: Translations = {
     "home.h1b": "التمرير.",
     "home.h1c": "ابدأ",
     "home.h1d": "بالمعرفة.",
-    "home.desc": "مايندلي تستبدل التمرير العشوائي بمسارات معرفة يقودها الذكاء. كل منشور مُلخّص ومتحقق ومطابق لنموّك المهني.",
+    "home.desc": "MindLink تستبدل التمرير العشوائي بمسارات معرفة يقودها الذكاء. كل منشور مُلخّص ومتحقق ومطابق لنموّك المهني.",
     "home.cta.feed": "ادخل التغذية",
     "home.cta.explore": "استكشف المسارات",
     "home.stat.posts": "منشورات موثّقة",
@@ -394,7 +394,7 @@ export const translations: Translations = {
     "home.pill.semantic": "تغذية دلالية",
 
     "settings.title": "الإعدادات",
-    "settings.desc": "خصص مايندلي حسب تفضيلاتك.",
+    "settings.desc": "خصص MindLink حسب تفضيلاتك.",
     "settings.save": "حفظ",
     "settings.saved": "تم الحفظ",
     "settings.appearance": "المظهر",
@@ -507,7 +507,7 @@ export const translations: Translations = {
     "network.message": "رسالة",
     "network.email": "البريد",
     "network.messageLocked": "تابع العضو لتتمكن من مراسلته.",
-    "network.mailSubject": "رسالة من مايندلي",
+    "network.mailSubject": "رسالة من MindLink",
 
     "saved.eyebrow": "المحفوظات",
     "saved.title": "قائمة القراءة",
@@ -601,7 +601,7 @@ export const translations: Translations = {
     "team.role.moderator": "مشرف",
   },
   fr: {
-    "app.name": "Mindly",
+    "app.name": "MindLink",
     "common.new": "Nouveau",
 
     "nav.search": "Rechercher des parcours…",
@@ -861,7 +861,7 @@ export const translations: Translations = {
     "team.role.moderator": "Modérateur",
   },
   zh: {
-    "app.name": "Mindly",
+    "app.name": "MindLink",
     "common.new": "新",
 
     "nav.search": "搜索知识路径…",

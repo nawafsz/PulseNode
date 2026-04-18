@@ -3,12 +3,12 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15
-    container_name: pulsenode-db
+    container_name: mindlink-db
     restart: always
     environment:
-      POSTGRES_USER: pulse_user
-      POSTGRES_PASSWORD: pulse_password
-      POSTGRES_DB: pulsenode_db
+      POSTGRES_USER: mindlink_user
+      POSTGRES_PASSWORD: mindlink_password
+      POSTGRES_DB: mindlink_db
     ports:
       - "5432:5432"
     volumes:

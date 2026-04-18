@@ -1,6 +1,6 @@
-# 🌐 PulseNode
+# 🌐 MindLink
 
-PulseNode is a cutting-edge, AI-powered full-stack application built with modern technologies. It features a robust NestJS backend integrated with OpenAI and Pinecone for advanced AI capabilities, and a sleek, responsive Next.js frontend.
+MindLink is a cutting-edge, AI-powered full-stack application built with modern technologies. It features a robust NestJS backend integrated with OpenAI and Pinecone for advanced AI capabilities, and a sleek, responsive Next.js frontend.
 
 ---
 
@@ -34,7 +34,7 @@ PulseNode is a cutting-edge, AI-powered full-stack application built with modern
 ## 🏗️ Project Structure
 
 ```bash
-PulseNode/
+MindLink/
 ├── frontend/     # Next.js web application
 ├── backend/      # NestJS API server
 ├── docker-compose.yml

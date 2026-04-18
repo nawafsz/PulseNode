@@ -8,7 +8,7 @@ export type AuthUser = {
   showAvatarOnPosts?: boolean;
 };
 
-const STORAGE_KEY = "pulsenode.user";
+const STORAGE_KEY = "mindlink.user";
 
 export function readAuthUser(): AuthUser | null {
   if (typeof window === "undefined") return null;
