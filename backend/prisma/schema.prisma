@@ -1,0 +1,82 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id              String        @id @default(uuid())
+  email           String        @unique
+  username        String        @unique
+  name            String
+  avatar          String?
+  reputationScore Int           @default(100)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  
+  posts           Post[]
+  savedPaths      KnowledgePath[]
+}
+
+model Post {
+  id              String        @id @default(uuid())
+  authorId        String
+  author          User          @relation(fields: [authorId], references: [id])
+  content         String        @db.Text
+  originalUrl     String?
+  
+  // AI Generated Data
+  tldrSummary     String?       @db.Text
+  factCheckStatus FactStatus    @default(PENDING)
+  trustScore      Int?          // 0-100
+  factCheckSource String?       // Link to sources used for verification
+  
+  // Interaction Stats
+  likes           Int           @default(0)
+  saves           Int           @default(0)
+  
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  tags            Tag[]
+  vectorRef       VectorRef?
+}
+
+model Tag {
+  id    String @id @default(uuid())
+  name  String @unique
+  posts Post[]
+}
+
+model KnowledgePath {
+  id          String   @id @default(uuid())
+  title       String
+  description String   @db.Text
+  authorId    String
+  author      User     @relation(fields: [authorId], references: [id])
+  
+  nodes       Json     // Array of ordered Post IDs and metadata
+  difficulty  String   // Beginner, Intermediate, Advanced
+  isFeatured  Boolean  @default(false)
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model VectorRef {
+  id          String   @id @default(uuid())
+  postId      String   @unique
+  post        Post     @relation(fields: [postId], references: [id])
+  pineconeId  String   // Reference to the embedding in Pinecone
+  createdAt   DateTime @default(now())
+}
+
+enum FactStatus {
+  PENDING
+  VERIFIED
+  DISPUTED
+  FALSE
+}
